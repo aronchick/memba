@@ -1,5 +1,4 @@
 .env
 venv
 .venv
-staticfiles
 __pycache__

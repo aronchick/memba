@@ -4,6 +4,9 @@ import sys
 
 if __name__ == "__main__":
     # sys.path.append("/Users/daaronch/code/memba/site")
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/memba")
     sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/site")
     print(sys.path)
 
