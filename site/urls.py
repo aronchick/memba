@@ -2,9 +2,10 @@ from django.urls import path, include
 
 from django.contrib import admin
 
+import memba.views
+
 admin.autodiscover()
 
-import memba.views
 
 # To add a new path, first import the app:
 # import blog

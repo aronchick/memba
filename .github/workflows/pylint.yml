@@ -21,7 +21,7 @@ jobs:
       - name: Analysing the code with pylint
         run: |
           pip install pylint
-          pylint $(find memba -name "*.py" | xargs)
+          pylint --rcfile .pylintrc site memba
       - name: Deploy to Heroku
         uses: AkhileshNS/heroku-deploy@v3.12.12
         with:
