@@ -12,6 +12,10 @@ import sys
 
 from django.core.wsgi import get_wsgi_application
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/memba")
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/site")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "site.settings")
 
 application = get_wsgi_application()
