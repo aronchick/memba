@@ -16,6 +16,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/memba")
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/site")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "site.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
+print(sys.path)
 
 application = get_wsgi_application()
