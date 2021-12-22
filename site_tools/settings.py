@@ -20,11 +20,6 @@ dotenv.load_dotenv()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/memba")
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/site")
-print(sys.path)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -60,7 +55,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "site.urls"
+ROOT_URLCONF = "site_tools.urls"
 
 TEMPLATES = [
     {
@@ -78,7 +73,7 @@ TEMPLATES = [
     }
 ]
 
-WSGI_APPLICATION = "site.wsgi.application"
+WSGI_APPLICATION = "site_tools.wsgi.application"
 
 
 # Database
